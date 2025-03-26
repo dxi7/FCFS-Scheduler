@@ -1,6 +1,6 @@
 # FCFS Scheduler
 
-This repository provides a straightforward implementation of the **First-Come, First-Served (FCFS)** CPU scheduling algorithm. The project was developed during a foundational bootcamp that included an **Operating Systems** unit. The goal is to demonstrate how FCFS handles process scheduling and to highlight essential performance metrics.
+This repository contains a clean, practical implementation of the First-Come, First-Served (FCFS) scheduling algorithm - one of the fundamental process scheduling methods in operating systems. Developed during my foundational bootcamp experience, this project not only demonstrates core OS concepts but also serves as an excellent example of sequential process management.
 
 ---
 
