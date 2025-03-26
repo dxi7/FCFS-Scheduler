@@ -42,19 +42,19 @@ This project **simulates FCFS scheduling**, allowing users to visualize executio
 
 To set up the project, follow these steps:
 
-### **Step 1: Clone the Repository**
+ ### **Step 1: Clone the Repository**
 Clone this repository to your local machine using:
 
 ```bash
 git clone https://github.com/dxi7/FCFS-Scheduler.git
 ```
-### **Step 2: Navigate to the Project Directory**
+ ### **Step 2: Navigate to the Project Directory**
 Once the cloning process is complete, move into the project directory:
 
 ```bash
 cd FCFS-Scheduler
 ```
-### **Step 3: Install Dependencies**
+ ### **Step 3: Install Dependencies**
 Install the required Python libraries:
 
 ```bash
@@ -62,6 +62,7 @@ pip install tabulate matplotlib
 ```
 These libraries are used for displaying tables and generating Gantt charts.
 
+---
 ## 🚀 Usage
 To run the program, execute the following command:
 
@@ -69,7 +70,7 @@ To run the program, execute the following command:
 python src/FCFS_Scheduling.py
 ```
 ### **User Input**
-The program will prompt you to enter the following details:
+**The program will prompt you to enter the following details:**
 
   - **Number of processes**
 
@@ -77,7 +78,7 @@ The program will prompt you to enter the following details:
 
   - **Burst time (execution duration) of each process**
 
-Once the input is provided, the program will display:
+**Once the input is provided, the program will display:**
 
   - **A detailed process table with execution times.**
 
@@ -86,12 +87,12 @@ Once the input is provided, the program will display:
    - **A Gantt chart to visualize the execution order.**
 ---
 ## 🔍 Methodology
-### **Algorithm Overview**
+ ### **Algorithm Overview**
   - **The FCFS scheduling algorithm sorts processes by arrival time.**
 
   - **The CPU executes each process sequentially, completing one before starting the next.**
 
- ### **Key Scheduling Metrics:**
+  ### **Key Scheduling Metrics:**
 
   - **Waiting Time (WT): Time spent waiting in the queue before execution.**
 
@@ -109,7 +110,7 @@ FCFS-Scheduler/
 ├── LICENSE
 ├── README.md
 ```
-### **Directory Breakdown**
+ ### **Directory Breakdown**
    - **notebooks/ → Jupyter notebooks for algorithm analysis.**
 
    - **src/ → The main Python script implementing FCFS.**
@@ -119,25 +120,44 @@ FCFS-Scheduler/
    - **README.md → Project documentation.**
 ---
 ## 📊 Example Output
-**After entering process details, the program outputs a structured table:**
+### **Process Table:**
+**After entering the process details, the program will output the following table:**
 
 ```plaintext
-+-----------+--------------+-----------+----------------+----------------+--------------+--------------+
-| Process   | Arrival Time | Burst Time| Completion Time| Turnaround Time| Waiting Time | Response Time|
-+-----------+--------------+-----------+----------------+----------------+--------------+--------------+
-| P1        |      0       |     5     |        5       |       5        |      0       |      0       |
-| P2        |      2       |     3     |        8       |       6        |      3       |      3       |
-| P3        |      4       |     2     |       10       |       6        |      4       |      4       |
-+-----------+--------------+-----------+----------------+----------------+--------------+--------------+
++------------+--------------+------------+-----------------+-----------------+--------------+---------------+
+| Process ID | Arrival Time | Burst Time | Completion Time | Turnaround Time | Waiting Time | Response Time |
++------------+--------------+------------+-----------------+-----------------+--------------+---------------+
+|     P4     |      0       |     8      |        8        |        8        |      0       |       0       |
+|     P3     |      2       |     6      |       14        |       12        |      6       |       6       |
+|     P2     |      4       |     5      |       19        |       15        |     10       |      10       |
+|     P5     |      6       |     4      |       23        |       17        |     13       |      13       |
+|     P1     |      7       |     4      |       27        |       20        |     16       |      16       |
++------------+--------------+------------+-----------------+-----------------+--------------+---------------+
 ```
-**The Gantt chart visualization clearly depicts execution order:**
+### **Process Averages:**
+**Here are the computed averages for the processes:**
+
+```plaintext
++-------------------------+---------+
+| Metric                  |   Value |
++=========================+=========+
+| Average Waiting Time    |     9   |
++-------------------------+---------+
+| Average Turnaround Time |    14.4 |
++-------------------------+---------+
+| Average Response Time   |     9   |
++-------------------------+---------+
 ```
-|  P1  |  P2  |  P3  |
-0      5      8     10
-```
+### **Gantt Chart:**
+**The following Gantt Chart clearly shows the execution order of the processes:**
+
+![image](https://github.com/user-attachments/assets/5abeb670-5401-45c2-b049-5f05d8f8865c)
+
+---
 ## 📜 License
 **This project is licensed under the MIT License. You are free to use, modify, and distribute the code following the license terms.**
 
+---
 ## 📩 Contact
 For questions or suggestions, feel free to reach out:
 
